@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Work Sans", serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.header .navbar {
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    right : 0;
+    z-index: 2;
+    width: 100%;
+    padding: 15px 0;
+
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-inline: auto;
+
+
+}
+
+.container .logo{
+    font-size: 40px;
+    color: black;
+}
+.container div.links ul {
+    display: flex;
+
+}
+.container div.links ul li{
+    margin: 10px ;
+   
+
+}
+.container div.links ul li a{
+    font-size: 20px;
+    align-items: center;
+    color: black;
+}
+.container div.links ul li a:hover{
+    color: red;
+}
+
+/* section 1 */
+.header .home {
+    background-color: #eee;
+}
+.section1 {
+    width: 85%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+}
+.section1 .one-left{
+    width:40%;
+    /* text-align: center; */
+
+}
+.section1 .one-left h2{
+    width: 80%;
+    color: black;
+    margin-block: 10px;
+    font-size: 55px;
+    font-weight: 700;
+    font-family: "Amatic SC", serif;
+}
+.section1 .one-left p{
+    color: black;
+    margin-block: 30px;
+}
+.section1 .one-left button{
+    width: 140px;
+    height: 50px;
+    border-radius: 5656px;
+    border-top-left-radius: 0%;
+    background-color: #ce1212;
+    color: #fff;
+
+}
+.section1 div.one-right {
+    width: 50%;
+}
+.section1 div.one-right img{
+    width: 70%;
+}
+
+
+/* chefs */
+.chefs {
+    padding-block: 90px;
+    text-align: center;
+    /* background-color: aqua; */
+}
+
+.chefs h2{
+    font-family: "Amatic SC", serif;
+    font-size: 50px;
+}
+.chefs h2 span{
+    color: red;
+}
+.chefs .container2{
+    /* background-color: aqua;  */
+    
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    margin-inline: auto;
+}
+.chefs .container2 .chef1 {
+    width: calc(100% / 3);
+    margin-left: 30px;
+    transition: transform .7s;
+    /* background-color: aqua; */
+     box-shadow: 2px 2px 10px gray;
+    
+}
+
+.chefs .container2 .chef1:hover{
+    transform: scale(1.1 , 1.1);
+}
+.chefs .container2 .chef1 img{
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.chefs .container2 .chef1 h3{
+ 
+    padding-bottom: 7px;;
+}
+.chefs .container2 .chef1 p{
+    padding-block: 10px;
+    padding-inline: 5px;
+
+} 
+
+
+/* gallery */
+
+.gallery{
+    text-align: center;
+    background-color: #eeeeeed3;
+    padding-top: 80px;
+}
+
+.gallery .title h3{
+    padding-inline: 20px;
+} 
+
+.gallery .title h2{
+    font-family: "Amatic SC", serif;
+    font-size: 40px;
+    margin-inline: 30px;
+}
+.gallery .title h2 span {
+    color: red;
+}
+
+.gallery .container { 
+    padding-top: 25px;
+    width: 85%;
+    margin-inline: auto;
+    display: grid;
+    gap: 15px;
+    grid-template-areas:
+      "pizza pizza pizza pizza steak steak steak steak burger burger burger burger"
+      "pizza pizza pizza pizza steak steak steak steak burger burger burger burger"
+      "slices-pizza slices-pizza slices-pizza slices-pizza steak steak steak steak chicken chicken chicken chicken"
+      "slices-pizza slices-pizza slices-pizza slices-pizza steak steak steak steak chicken chicken chicken chicken"
+      "slices-pizza slices-pizza slices-pizza slices-pizza steak steak steak steak koftta koftta koftta koftta"
+      "slices-pizza slices-pizza slices-pizza slices-pizza omlet omlet omlet omlet koftta koftta koftta koftta"
+      "slices-pizza slices-pizza slices-pizza slices-pizza omlet omlet omlet omlet koftta koftta koftta koftta"
+      ". . . . omlet omlet omlet omlet . . . .";
+}
+
+   .container img{
+      width: 100%;
+   }
+  
+  .pizza { grid-area: pizza; }
+  
+  .steak { grid-area: steak; }
+  
+  .burger { grid-area: burger; }
+  
+  .slices-pizza { grid-area: slices-pizza; }
+  
+  .omlet { grid-area: omlet; }
+  
+  .chicken { grid-area: chicken; }
+  
+  .koftta { grid-area: koftta; }
+
+  /* contact */
+
+  .contact {
+    padding: 80px;
+    /* background-color: aqua; */
+    text-align: center;
+  }
+
+  .contact h2 {
+    font-family: "Amatic SC", serif;
+    font-size: 50px;
+    margin-inline: 30px;
+  }
+
+  .contact h2 span {
+    color: red;
+  }
+  .contact .container3{
+    /* background-color: #eee; */
+    margin-top: 30px;
+    width: 85%;
+    margin-inline: auto;
+  }
+  .contact .container3 iframe{
+    width: 100%;
+  }
+
+  .contact .container3 .bottom-contact{
+    margin-block: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 20px;
+
+  }
+  
+  .contact .bottom-contact .item {
+    width: calc(50% - 10px);
+    background-color: #eee;
+    padding: 25px 10px;
+  }
+
+.contact .form {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 1.875rem #00000014;
+
+}
+.contact .form .form-text{
+    width: 100%;
+    margin: auto;
+}
+
+.form .text,
+.form input[type="email"] {
+    width: 48%;
+    padding: 15px;
+    margin-left: 1%;
+}
+
+.form .subject {
+    width: 100%;
+    margin-block: 10px;
+    padding: 15px;
+}
+
+.form textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+button {
+    background-color: rgb(218, 28, 28);
+    color: white;
+    border-radius: 78373px;
+    padding: 15px 40px;
+    border: none;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: rgb(253, 8, 8);
+
+}
